@@ -1,0 +1,1341 @@
+app.cpp
+core.cpp
+net.cpp
+qr.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp: In member function 'void Gfx::layerEnd(Rect, Rect)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp:95:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   95 |     if (!inLayer) return; inLayer = false;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp:95:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   95 |     if (!inLayer) return; inLayer = false;
+      |                           ^~~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp: In member function 'float Gfx::textW(const std::string&, float, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp:195:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  195 |     if (s.empty()) return 0; std::vector<Seg> sg; segments(s, sg); float w = 0; int px = (int)lroundf(size * S); TTF_Font* f = font(fid, px); if (!f) return 0;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp:195:30: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  195 |     if (s.empty()) return 0; std::vector<Seg> sg; segments(s, sg); float w = 0; int px = (int)lroundf(size * S); TTF_Font* f = font(fid, px); if (!f) return 0;
+      |                              ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp: In member function 'void Gfx::imageTiled(SDL_Texture*, Rect, float)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp:232:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  232 |     if (!t) return; int tw, th; SDL_QueryTexture(t, nullptr, nullptr, &tw, &th); float tileH = tileW * th / tw;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp:232:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  232 |     if (!t) return; int tw, th; SDL_QueryTexture(t, nullptr, nullptr, &tw, &th); float tileH = tileW * th / tw;
+      |                     ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp: In member function 'void Input::pollPhones()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp:550:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  550 |             if (net->cl[ci].slot == s) net->cl[ci].slot = -1; owner[s] = -1;
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/core.cpp:550:63: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  550 |             if (net->cl[ci].slot == s) net->cl[ci].slot = -1; owner[s] = -1;
+      |                                                               ^~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/app.cpp: In member function 'void App::zoomEnd()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/app.cpp:811:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  811 |     if (!zActive) return; zActive = false;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/app.cpp:811:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  811 |     if (!zActive) return; zActive = false;
+      |                           ^~~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/app.cpp: In member function 'void App::gyroCursors(int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/app.cpp:878:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  878 |             if (!p.down[b]) continue; p.down[b] = false; p.rep[b] = false;
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/app.cpp:878:39: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  878 |             if (!p.down[b]) continue; p.down[b] = false; p.rep[b] = false;
+      |                                       ^
+ahorcado.cpp
+ajedrez.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp: In function 'std::string {anonymous}::normLetter(const std::string&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:12:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   12 |     for (auto& m : M) if (l == m[0]) return m[1]; if (l == "Ñ") return l;
+      |     ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:12:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   12 |     for (auto& m : M) if (l == m[0]) return m[1]; if (l == "Ñ") return l;
+      |                                                   ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp: In member function 'void {anonymous}::Hang::guess(const std::string&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:34:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   34 |         if (ph != GUESS || wasUsed(l)) return; used.push_back(l); bool hit = false; for (size_t i = 0; i < word.size(); i++) if (word[i] == l) { shown[i] = true; hit = true; }
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:34:48: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   34 |         if (ph != GUESS || wasUsed(l)) return; used.push_back(l); bool hit = false; for (size_t i = 0; i < word.size(); i++) if (word[i] == l) { shown[i] = true; hit = true; }
+      |                                                ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp: In member function 'void {anonymous}::Hang::conclude()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:66:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   66 |         for (int i = 0; i < N; i++) r.push_back({ scores[i], scores[i] == best ? (cnt > 1 ? 'd' : 'w') : 'l' }); if (resigned >= 0) r[resigned].r = 'x';
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:66:114: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   66 |         for (int i = 0; i < N; i++) r.push_back({ scores[i], scores[i] == best ? (cnt > 1 ? 'd' : 'w') : 'l' }); if (resigned >= 0) r[resigned].r = 'x';
+      |                                                                                                                  ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp: In member function 'void {anonymous}::Hang::drawGallows(Gfx&, float, float, float)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:72:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   72 |         if (wrong >= 2) g.line(hx, hy + s * 0.18f, hx, hy + s * 0.75f, 5, b); if (wrong >= 3) g.line(hx, hy + s * 0.3f, hx - s * 0.28f, hy + s * 0.55f, 5, b); if (wrong >= 4) g.line(hx, hy + s * 0.3f, hx + s * 0.28f, hy + s * 0.55f, 5, b);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:72:79: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   72 |         if (wrong >= 2) g.line(hx, hy + s * 0.18f, hx, hy + s * 0.75f, 5, b); if (wrong >= 3) g.line(hx, hy + s * 0.3f, hx - s * 0.28f, hy + s * 0.55f, 5, b); if (wrong >= 4) g.line(hx, hy + s * 0.3f, hx + s * 0.28f, hy + s * 0.55f, 5, b);
+      |                                                                               ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:73:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   73 |         if (wrong >= 5) g.line(hx, hy + s * 0.75f, hx - s * 0.22f, hy + s * 1.12f, 5, b); if (wrong >= 6) g.line(hx, hy + s * 0.75f, hx + s * 0.22f, hy + s * 1.12f, 5, b);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ahorcado.cpp:73:91: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   73 |         if (wrong >= 5) g.line(hx, hy + s * 0.75f, hx - s * 0.22f, hy + s * 1.12f, 5, b); if (wrong >= 6) g.line(hx, hy + s * 0.75f, hx + s * 0.22f, hy + s * 1.12f, 5, b);
+      |                                                                                           ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp: In member function 'void {anonymous}::St::init()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp:14:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   14 |         for (int i = 0; i < 64; i++) b[i] = 0; for (int c = 0; c < 8; c++) { b[c] = -back[c]; b[8 + c] = -P; b[48 + c] = P; b[56 + c] = back[c]; } turn = 0; castle = 15; ep = -1; half = 0;
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp:14:48: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   14 |         for (int i = 0; i < 64; i++) b[i] = 0; for (int c = 0; c < 8; c++) { b[c] = -back[c]; b[8 + c] = -P; b[48 + c] = P; b[56 + c] = back[c]; } turn = 0; castle = 15; ep = -1; half = 0;
+      |                                                ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp: In function '{anonymous}::St {anonymous}::apply(const St&, const Mv&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp:34:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   34 |     if (m.from == 63 || m.to == 63) n.castle &= ~1; if (m.from == 56 || m.to == 56) n.castle &= ~2; if (m.from == 7 || m.to == 7) n.castle &= ~4; if (m.from == 0 || m.to == 0) n.castle &= ~8;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp:34:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   34 |     if (m.from == 63 || m.to == 63) n.castle &= ~1; if (m.from == 56 || m.to == 56) n.castle &= ~2; if (m.from == 7 || m.to == 7) n.castle &= ~4; if (m.from == 0 || m.to == 0) n.castle &= ~8;
+      |                                                     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp: In member function 'virtual void {anonymous}::Chess::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp:114:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  114 |         if (!pl[st.turn].ai) return; aiT += dt; if (aiT < aiWait) return; bool ok; Mv m = chooseMove(st, pl[st.turn].level, ok); if (ok) doMove(m); else over = true;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp:114:38: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  114 |         if (!pl[st.turn].ai) return; aiT += dt; if (aiT < aiWait) return; bool ok; Mv m = chooseMove(st, pl[st.turn].level, ok); if (ok) doMove(m); else over = true;
+      |                                      ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp: In member function 'virtual void {anonymous}::Chess::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp:126:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  126 |             if (canPick && !ui.padNav && i != sel) g.ring(r.cx(), r.cy(), cs * 0.44f, 2, rgb(0xffe27a, 140)); if (i == sel) g.ring(r.cx(), r.cy(), cs * 0.46f, 5, pal::gold);
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ajedrez.cpp:126:111: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  126 |             if (canPick && !ui.padNav && i != sel) g.ring(r.cx(), r.cy(), cs * 0.44f, 2, rgb(0xffe27a, 140)); if (i == sel) g.ring(r.cx(), r.cy(), cs * 0.46f, 5, pal::gold);
+      |                                                                                                               ^~
+backgammon.cpp
+bigparch.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp: In function 'int {anonymous}::maxUse(const BS&, int, std::vector<int>)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp:26:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   26 |     if (dice.empty()) return 0; int best = 0; std::set<int> tried;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp:26:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   26 |     if (dice.empty()) return 0; int best = 0; std::set<int> tried;
+      |                                 ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp: In function 'void {anonymous}::enumSeq(const BS&, int, std::vector<int>, std::vector<M>, std::vector<Seq>&, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp:47:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   47 |     if ((int)out.size() > cap) return; auto firsts = legalFirst(s, p, dice); if (firsts.empty()) { out.push_back({ cur, s }); return; }
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp:47:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   47 |     if ((int)out.size() > cap) return; auto firsts = legalFirst(s, p, dice); if (firsts.empty()) { out.push_back({ cur, s }); return; }
+      |                                        ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp: In member function 'void {anonymous}::Backgammon::newGame()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp:55:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   55 |         for (int i = 0; i < 24; i++) s.b[i] = 0; s.bar[0] = s.bar[1] = s.off[0] = s.off[1] = 0; s.b[23] = 2; s.b[12] = 5; s.b[7] = 3; s.b[5] = 5; s.b[0] = -2; s.b[11] = -5; s.b[16] = -3; s.b[18] = -5;
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp:55:50: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   55 |         for (int i = 0; i < 24; i++) s.b[i] = 0; s.bar[0] = s.bar[1] = s.off[0] = s.off[1] = 0; s.b[23] = 2; s.b[12] = 5; s.b[7] = 3; s.b[5] = 5; s.b[0] = -2; s.b[11] = -5; s.b[16] = -3; s.b[18] = -5;
+      |                                                  ^
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp: In member function 'virtual void {anonymous}::Backgammon::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp:102:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  102 |             if (isT) g.ring(r.cx(), top ? r.y + r.h - 20 : r.y + 20, 10, 3, rgb(0x7ad06a)); if (ui.focused(id)) ui.drawFocus(r, 4); if (hit) { if (isT) { M mm{}; for (auto& m : lf) if (m.from == (sel == 24 ? -1 : sel) && m.to == i) mm = m; doMove(mm); return; } else if (canSrc) sel = (sel == i ? -2 : i); }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/backgammon.cpp:102:93: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  102 |             if (isT) g.ring(r.cx(), top ? r.y + r.h - 20 : r.y + 20, 10, 3, rgb(0x7ad06a)); if (ui.focused(id)) ui.drawFocus(r, 4); if (hit) { if (isT) { M mm{}; for (auto& m : lf) if (m.from == (sel == 24 ? -1 : sel) && m.to == i) mm = m; doMove(mm); return; } else if (canSrc) sel = (sel == i ? -2 : i); }
+      |                                                                                             ^~
+bingo.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp: In member function 'bool {anonymous}::BigParch::canPass() const':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp:47:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   47 |         for (int d = 0; d < (int)avail.size(); d++) if (!avail[d].s && !avail[d].b && !legalFor(turn, d).empty()) first = true; return !first; }
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp:47:129: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   47 |         for (int d = 0; d < (int)avail.size(); d++) if (!avail[d].s && !avail[d].b && !legalFor(turn, d).empty()) first = true; return !first; }
+      |                                                                                                                                 ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp: In member function 'void {anonymous}::BigParch::doRoll()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp:52:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   52 |         if (over || !avail.empty()) return; used = 0; int d1 = 1 + rndInt(6), d2 = 1 + rndInt(6); ad[0] = d1; ad[1] = d2; dieAnim = 0.5f; app->audio.play("dice");
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp:52:45: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   52 |         if (over || !avail.empty()) return; used = 0; int d1 = 1 + rndInt(6), d2 = 1 + rndInt(6); ad[0] = d1; ad[1] = d2; dieAnim = 0.5f; app->audio.play("dice");
+      |                                             ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp: In member function 'virtual void {anonymous}::BigParch::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp:124:17: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  124 |                 if (mv) g.ring(sx, sy, r + 3, 3, rgb(0xffffff)); if (bar) g.ring(sx, sy, r + 2, 2, rgb(0x111111)); if (ui.focused(id)) ui.drawFocus(hr, r);
+      |                 ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bigparch.cpp:124:66: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  124 |                 if (mv) g.ring(sx, sy, r + 3, 3, rgb(0xffffff)); if (bar) g.ring(sx, sy, r + 2, 2, rgb(0x111111)); if (ui.focused(id)) ui.drawFocus(hr, r);
+      |                                                                  ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bingo.cpp: In member function 'virtual void {anonymous}::Bingo::start()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bingo.cpp:14:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   14 |         for (int k = 1; k <= 75; k++) bag.push_back(k); for (int a = 74; a > 0; a--) std::swap(bag[a], bag[rndInt(a + 1)]); ballT = 1.2f;
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/bingo.cpp:14:57: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   14 |         for (int k = 1; k <= 75; k++) bag.push_back(k); for (int a = 74; a > 0; a--) std::swap(bag[a], bag[rndInt(a + 1)]); ballT = 1.2f;
+      |                                                         ^~~
+blackjack.cpp
+cartascolores.cpp
+casino.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/blackjack.cpp: In function 'bool {anonymous}::basicHit(const std::vector<Card>&, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/blackjack.cpp:14:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   14 |     if (t <= 11) return true; if (t == 12) return !(up >= 4 && up <= 6); if (t <= 16) return !(up >= 2 && up <= 6); return false;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/blackjack.cpp:14:31: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   14 |     if (t <= 11) return true; if (t == 12) return !(up >= 4 && up <= 6); if (t <= 16) return !(up >= 2 && up <= 6); return false;
+      |                               ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/blackjack.cpp: In member function 'virtual void {anonymous}::BlackJack::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/blackjack.cpp:53:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   53 |             if (resigned >= 0) r[resigned].r = 'x'; finish(r, sm); } return; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/blackjack.cpp:53:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   53 |             if (resigned >= 0) r[resigned].r = 'x'; finish(r, sm); } return; }
+      |                                                     ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp: In member function 'bool {anonymous}::Colors::play(int, std::vector<int>, char)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:40:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   40 |         if (over || p != turn || idx.empty()) return false; std::vector<Card> cs; for (int i : idx) cs.push_back(hands[p][i]);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:40:61: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   40 |         if (over || p != turn || idx.empty()) return false; std::vector<Card> cs; for (int i : idx) cs.push_back(hands[p][i]);
+      |                                                             ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:42:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   42 |         if (!playable(cs[0])) return false; if (cs.size() > 1) { if (!multiOK(cs[0])) return false; for (auto& c : cs) if (c.k != cs[0].k) return false; }
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:42:45: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   42 |         if (!playable(cs[0])) return false; if (cs.size() > 1) { if (!multiOK(cs[0])) return false; for (auto& c : cs) if (c.k != cs[0].k) return false; }
+      |                                             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:44:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   44 |         for (auto& c : cs) discard.push_back(c); const Card& lc = cs.back(); color = lc.c == 'w' ? chosen : lc.c; drew = false; int m = (int)cs.size(); app->audio.play("place");
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:44:50: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   44 |         for (auto& c : cs) discard.push_back(c); const Card& lc = cs.back(); color = lc.c == 'w' ? chosen : lc.c; drew = false; int m = (int)cs.size(); app->audio.play("place");
+      |                                                  ^~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp: In member function 'void {anonymous}::Colors::aiMove()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:72:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   72 |             if (c.k == "p2" || c.k == "skip" || c.k == "rev") sc += danger ? 6 : 1.5f; if (c.k == "p4") sc += danger ? 8 : 0; if (isNum(c.k)) sc += (c.k[0] - '0') * 0.05f + 1; if (h.size() <= 2) sc += 4;
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:72:88: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   72 |             if (c.k == "p2" || c.k == "skip" || c.k == "rev") sc += danger ? 6 : 1.5f; if (c.k == "p4") sc += danger ? 8 : 0; if (isNum(c.k)) sc += (c.k[0] - '0') * 0.05f + 1; if (h.size() <= 2) sc += 4;
+      |                                                                                        ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp: In member function 'void {anonymous}::Colors::tryPlay(std::vector<int>)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:89:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   89 |         if (idx.empty()) return; if (!playable(hands[turn][idx[0]])) { app->toast("Esa carta no se puede jugar"); return; }
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:89:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   89 |         if (idx.empty()) return; if (!playable(hands[turn][idx[0]])) { app->toast("Esa carta no se puede jugar"); return; }
+      |                                  ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp: In member function 'virtual void {anonymous}::Colors::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:131:21: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+  131 |                     else if (multi && (joins || sel[i] || twins)) { sel[i] = !sel[i]; app->audio.play("click"); } else tryPlay({ i }); if (over || (int)hands.size() == 0) return; } }
+      |                     ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cartascolores.cpp:131:136: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  131 |                     else if (multi && (joins || sel[i] || twins)) { sel[i] = !sel[i]; app->audio.play("click"); } else tryPlay({ i }); if (over || (int)hands.size() == 0) return; } }
+      |                                                                                                                                        ^~
+chinchon.cpp
+In file included from /__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:2:
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.h: In member function 'bool cz::Casino::broke(Gfx&, UI&, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.h:57:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   57 |         if (w >= mn) return false; g.rrect({ 330, 250, 800, 140 }, 16, rgb(0x3a1010, 235)); g.text("Te quedaste sin fichas suficientes", 730, 290, 22, rgb(0xff9a9a), F_BOLD, AL_C);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.h:57:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   57 |         if (w >= mn) return false; g.rrect({ 330, 250, 800, 140 }, 16, rgb(0x3a1010, 235)); g.text("Te quedaste sin fichas suficientes", 730, 290, 22, rgb(0xff9a9a), F_BOLD, AL_C);
+      |                                    ^
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.h: In member function 'void cz::Casino::betRow(Gfx&, UI&, float, bool)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.h:64:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   64 |         if (ui.button("Borrar", { 920, y, 100, 40 }, 2, !locked)) bet = 0; if (ui.button("Todo", { 1026, y, 80, 40 }, 2, !locked)) bet = w; if (ui.button("Repetir", { 1112, y, 110, 40 }, 2, !locked && lastBet > 0)) bet = std::min(lastBet, w);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.h:64:76: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   64 |         if (ui.button("Borrar", { 920, y, 100, 40 }, 2, !locked)) bet = 0; if (ui.button("Todo", { 1026, y, 80, 40 }, 2, !locked)) bet = w; if (ui.button("Repetir", { 1112, y, 110, 40 }, 2, !locked && lastBet > 0)) bet = std::min(lastBet, w);
+      |                                                                            ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp: In member function 'void {anonymous}::Slots::done()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:26:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   26 |         for (int k = 0; k < 3; k++) for (int r = 0; r < 3; r++) shown[k][r] = f[k][r]; spinning = false; if (pay > 0) addW(pay); commit();
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:26:88: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   26 |         for (int k = 0; k < 3; k++) for (int r = 0; r < 3; r++) shown[k][r] = f[k][r]; spinning = false; if (pay > 0) addW(pay); commit();
+      |                                                                                        ^~~~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp: In member function 'virtual void {anonymous}::Slots::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:34:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   34 |         if (topBar(g, ui)) return; if (broke(g, ui, PER[0] * nLines)) return;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:34:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   34 |         if (topBar(g, ui)) return; if (broke(g, ui, PER[0] * nLines)) return;
+      |                                    ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:40:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   40 |         if (ui.button("GIRAR", { 600, 590, 320, 56 }, 3, !spinning)) spin(); if (!spinning) ui.setFocusIfNone(hid("GIRAR", 600 * 7 + 590));
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:40:78: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   40 |         if (ui.button("GIRAR", { 600, 590, 320, 56 }, 3, !spinning)) spin(); if (!spinning) ui.setFocusIfNone(hid("GIRAR", 600 * 7 + 590));
+      |                                                                              ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp: In member function 'virtual void {anonymous}::VideoPoker::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:61:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   61 |         if (topBar(g, ui)) return; if (phase == 0 && broke(g, ui, 5)) return;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:61:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   61 |         if (topBar(g, ui)) return; if (phase == 0 && broke(g, ui, 5)) return;
+      |                                    ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:65:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   65 |         if (phase == 1) ui.setFocusIfNone(hid("vp", 0)); g.text(handName, 976, 90, 18, pal::cream, F_BOLD, AL_C); drawMsg(g, 396);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:65:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   65 |         if (phase == 1) ui.setFocusIfNone(hid("vp", 0)); g.text(handName, 976, 90, 18, pal::cream, F_BOLD, AL_C); drawMsg(g, 396);
+      |                                                          ^
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:69:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   69 |         if (ui.button(phase == 0 ? "Repartir" : "Cambiar", { 620, 545, 320, 56 }, 3)) go(); if (phase == 0) ui.setFocusIfNone(hid("Repartir", 620 * 7 + 545));
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:69:93: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   69 |         if (ui.button(phase == 0 ? "Repartir" : "Cambiar", { 620, 545, 320, 56 }, 3)) go(); if (phase == 0) ui.setFocusIfNone(hid("Repartir", 620 * 7 + 545));
+      |                                                                                             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp: In member function 'virtual void {anonymous}::Baccarat::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:94:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   94 |         if (topBar(g, ui)) return; if (!busy && staked() == 0 && broke(g, ui, 5)) return;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:94:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   94 |         if (topBar(g, ui)) return; if (!busy && staked() == 0 && broke(g, ui, 5)) return;
+      |                                    ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:98:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   98 |         for (size_t i = 0; i < sp.size(); i++) drawCard(g, { 460.f + i * 90, 72, 70, 98 }, sp[i]); for (size_t i = 0; i < sb.size(); i++) drawCard(g, { 460.f + i * 90, 176, 70, 98 }, sb[i]); (void)cp; (void)cb;
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:98:100: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   98 |         for (size_t i = 0; i < sp.size(); i++) drawCard(g, { 460.f + i * 90, 72, 70, 98 }, sp[i]); for (size_t i = 0; i < sb.size(); i++) drawCard(g, { 460.f + i * 90, 176, 70, 98 }, sb[i]); (void)cp; (void)cb;
+      |                                                                                                    ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:102:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  102 |         if (!busy) ui.setFocusIfNone(hid("bc", 0)); g.rrect({ 360, 484, 100, 32 }, 16, rgb(0x120c08, 200)); g.text("Ficha:", 450, 500, 18, pal::cream, F_BOLD, AL_R); chipPick(g, ui, 470, 480);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:102:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  102 |         if (!busy) ui.setFocusIfNone(hid("bc", 0)); g.rrect({ 360, 484, 100, 32 }, 16, rgb(0x120c08, 200)); g.text("Ficha:", 450, 500, 18, pal::cream, F_BOLD, AL_R); chipPick(g, ui, 470, 480);
+      |                                                     ^
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:103:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  103 |         if (ui.button("Repartir", { 480, 555, 280, 52 }, 3, !busy && staked() > 0)) deal(); if (ui.button("Borrar apuestas", { 780, 555, 260, 52 }, 2, !busy)) for (int& b : bets) b = 0;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:103:93: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  103 |         if (ui.button("Repartir", { 480, 555, 280, 52 }, 3, !busy && staked() > 0)) deal(); if (ui.button("Borrar apuestas", { 780, 555, 260, 52 }, 2, !busy)) for (int& b : bets) b = 0;
+      |                                                                                             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp: In member function 'virtual void {anonymous}::PaiGow::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:125:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  125 |         if (topBar(g, ui)) return; if (phase == 0 && broke(g, ui, 5)) return;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:125:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  125 |         if (topBar(g, ui)) return; if (phase == 0 && broke(g, ui, 5)) return;
+      |                                    ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:131:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  131 |             if (phase == 1) ui.setFocusIfNone(hid("pg", 0)); if (low.size() == 2) { Ev h = evalJ(hi); Ev2 l = eval2({ mine[low[0]], mine[low[1]] }); g.text("Alta: " + h.name + " · Baja: " + (l.pair ? "Par" : "Carta alta") + (paiOk(h, l) ? "" : "  ⚠ la alta debe ser mayor"), 765, 410, 16, pal::gold, F_BOLD, AL_C); } }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:131:62: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  131 |             if (phase == 1) ui.setFocusIfNone(hid("pg", 0)); if (low.size() == 2) { Ev h = evalJ(hi); Ev2 l = eval2({ mine[low[0]], mine[low[1]] }); g.text("Alta: " + h.name + " · Baja: " + (l.pair ? "Par" : "Carta alta") + (paiOk(h, l) ? "" : "  ⚠ la alta debe ser mayor"), 765, 410, 16, pal::gold, F_BOLD, AL_C); } }
+      |                                                              ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:135:9: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+  135 |         else if (ui.button("Nueva mano", { 540, 520, 300, 52 }, 3)) { phase = 0; mine.clear(); low.clear(); bet = std::min(lastBet, w); msg = ""; } if (phase == 2) ui.setFocusIfNone(hid("Nueva mano", 540 * 7 + 520));
+      |         ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:135:149: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  135 |         else if (ui.button("Nueva mano", { 540, 520, 300, 52 }, 3)) { phase = 0; mine.clear(); low.clear(); bet = std::min(lastBet, w); msg = ""; } if (phase == 2) ui.setFocusIfNone(hid("Nueva mano", 540 * 7 + 520));
+      |                                                                                                                                                     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp: In member function 'void {anonymous}::Blackjack::act(int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:160:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  160 |         if (phase != 1) return; BJHand& h = hands[cur];
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:160:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  160 |         if (phase != 1) return; BJHand& h = hands[cur];
+      |                                 ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp: In member function 'virtual void {anonymous}::Blackjack::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:179:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  179 |         if (topBar(g, ui)) return; if (phase == 0 && broke(g, ui, 5)) return;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:179:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  179 |         if (topBar(g, ui)) return; if (phase == 0 && broke(g, ui, 5)) return;
+      |                                    ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:187:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  187 |             if (ui.button("Pedir", { 330, 520, 170, 52 }, 3)) act(0); if (ui.button("Plantarse", { 510, 520, 170, 52 }, 2)) act(1); if (ui.button("Doblar", { 690, 520, 170, 52 }, 2, canD)) act(2); if (ui.button("Dividir", { 870, 520, 170, 52 }, 2, canS)) act(3); if (canSur && ui.button("Rendirse (½)", { 1050, 520, 170, 52 }, 1)) act(4); ui.setFocusIfNone(hid("Pedir", 330 * 7 + 520)); }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/casino.cpp:187:71: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  187 |             if (ui.button("Pedir", { 330, 520, 170, 52 }, 3)) act(0); if (ui.button("Plantarse", { 510, 520, 170, 52 }, 2)) act(1); if (ui.button("Doblar", { 690, 520, 170, 52 }, 2, canD)) act(2); if (ui.button("Dividir", { 870, 520, 170, 52 }, 2, canS)) act(3); if (canSur && ui.button("Rendirse (½)", { 1050, 520, 170, 52 }, 1)) act(4); ui.setFocusIfNone(hid("Pedir", 330 * 7 + 520)); }
+      |                                                                       ^~
+cierracaja.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp: In lambda function:
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp:23:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   23 |         if (!rem) return 0; if (memoD[rem] >= 0) return memoD[rem]; int i = 0; while (!(rem & (1 << i))) i++;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp:23:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   23 |         if (!rem) return 0; if (memoD[rem] >= 0) return memoD[rem]; int i = 0; while (!(rem & (1 << i))) i++;
+      |                             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp: In member function 'void {anonymous}::Chin::newRound()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp:40:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   40 |         for (auto& h : hands) std::sort(h.begin(), h.end(), cmpCard); disc = { stock.back() }; stock.pop_back(); turn = nextP(dealer); ph = DRAW; sel = -1; msg.clear(); resetAi();
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp:40:71: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   40 |         for (auto& h : hands) std::sort(h.begin(), h.end(), cmpCard); disc = { stock.back() }; stock.pop_back(); turn = nextP(dealer); ph = DRAW; sel = -1; msg.clear(); resetAi();
+      |                                                                       ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp: In member function 'void {anonymous}::Chin::closeWith(int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp:55:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   55 |         if (canClose(ci) < 0) return; int p = turn; disc.push_back(hands[p][ci]); hands[p].erase(hands[p].begin() + ci); chin = isChinchon(hands[p]); closer = p; gain.assign(N, 0); dead.assign(N, 0);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp:55:39: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   55 |         if (canClose(ci) < 0) return; int p = turn; disc.push_back(hands[p][ci]); hands[p].erase(hands[p].begin() + ci); chin = isChinchon(hands[p]); closer = p; gain.assign(N, 0); dead.assign(N, 0);
+      |                                       ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp: In member function 'virtual void {anonymous}::Chin::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp:88:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   88 |         if (!disc.empty()) sp::draw(g, { dx + 190, 190, 96, 134 }, disc.back().s, disc.back().r, true); g.text("descarte (" + std::to_string(disc.size()) + ")", dx + 238, 342, 14, pal::cream, F_BOLD, AL_C);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/chinchon.cpp:88:105: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   88 |         if (!disc.empty()) sp::draw(g, { dx + 190, 190, 96, 134 }, disc.back().s, disc.back().r, true); g.text("descarte (" + std::to_string(disc.size()) + ")", dx + 238, 342, 14, pal::cream, F_BOLD, AL_C);
+      |                                                                                                         ^
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp: In function 'void {anonymous}::build()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp:9:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+    9 |     if (built) return; built = true;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp:9:24: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    9 |     if (built) return; built = true;
+      |                        ^~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp: In function 'int {anonymous}::choose(int, int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp:25:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   25 |     if (o.empty()) return 0; std::sort(o.begin(), o.end());
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp:25:30: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   25 |     if (o.empty()) return 0; std::sort(o.begin(), o.end());
+      |                              ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp: In member function 'void {anonymous}::Box::roll()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp:38:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   38 |         if (over || rolled) return; bool two = (mask & 63) != 0; d[0] = 1 + rndInt(6); d[1] = two ? 1 + rndInt(6) : 0; rolled = true; rollAnim = 0.5f; pick = 0; app->audio.play("dice");
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp:38:37: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   38 |         if (over || rolled) return; bool two = (mask & 63) != 0; d[0] = 1 + rndInt(6); d[1] = two ? 1 + rndInt(6) : 0; rolled = true; rollAnim = 0.5f; pick = 0; app->audio.play("dice");
+      |                                     ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp: In member function 'virtual void {anonymous}::Box::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp:75:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   75 |             if (ui.focused(id)) ui.drawFocus(r, 12); if (hit) tap(i);
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cierracaja.cpp:75:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   75 |             if (ui.focused(id)) ui.drawFocus(r, 12); if (hit) tap(i);
+      |                                                      ^~
+connect4.cpp
+cuarenta.cpp
+cubo4.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cuarenta.cpp: In member function 'void {anonymous}::Cuarenta::playCard(int, std::vector<int>)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cuarenta.cpp:44:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   44 |         if (over) return; advance(); resetAi();
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cuarenta.cpp:44:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   44 |         if (over) return; advance(); resetAi();
+      |                           ^~~~~~~
+culebras.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cubo4.cpp: In member function 'bool {anonymous}::Cubo::drop(int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cubo4.cpp:20:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   20 |         if (over || h[y * 4 + x] >= 4) return false; int z = h[y * 4 + x]++; cell[x][y][z] = turn + 1; count++; app->audio.play("place");
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/cubo4.cpp:20:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   20 |         if (over || h[y * 4 + x] >= 4) return false; int z = h[y * 4 + x]++; cell[x][y][z] = turn + 1; count++; app->audio.play("place");
+      |                                                      ^~~
+damaschinas.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/culebras.cpp: In member function 'void {anonymous}::Snakes::place()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/culebras.cpp:40:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   40 |         if (phase != 1 || over || pendingDest < 0 || busy() || rollAnim > 0) return; int p = cur(); int from = pos[p], mid = pendingDest, np = mid; Walker& w = walk[p];
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/culebras.cpp:40:86: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   40 |         if (phase != 1 || over || pendingDest < 0 || busy() || rollAnim > 0) return; int p = cur(); int from = pos[p], mid = pendingDest, np = mid; Walker& w = walk[p];
+      |                                                                                      ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/damaschinas.cpp: In member function 'bool {anonymous}::Damas::move(int, int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/damaschinas.cpp:45:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   45 |         if (over || p != turn || board[from] != p) return false; auto r = reach(board, from); if (!r.count(to)) return false; animPath = r[to]; animTo = to; animDur = 0.17f * (float)(animPath.size() - 1); anim = animDur;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/damaschinas.cpp:45:66: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   45 |         if (over || p != turn || board[from] != p) return false; auto r = reach(board, from); if (!r.count(to)) return false; animPath = r[to]; animTo = to; animDur = 0.17f * (float)(animPath.size() - 1); anim = animDur;
+      |                                                                  ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/damaschinas.cpp: In member function 'bool {anonymous}::Damas::aiMove()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/damaschinas.cpp:54:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   54 |         if (all.empty()) return false; if (rnd01() < err) { auto m = all[rndInt((int)all.size())]; bf = m.first; bt = m.second; } return move(p, bf, bt); }
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/damaschinas.cpp:54:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   54 |         if (all.empty()) return false; if (rnd01() < err) { auto m = all[rndInt((int)all.size())]; bf = m.first; bt = m.second; } return move(p, bf, bt); }
+      |                                        ^~
+damas.cpp
+disney.cpp
+domino.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/disney.cpp: In member function 'virtual void {anonymous}::Disney::start()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/disney.cpp:21:13: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   21 |             for (int i = 0; i < 3 && i < (int)ix.size(); i++) o.push_back(others[ix[i]].name); while (o.size() < 4) o.push_back("Nadie"); for (int i = 3; i > 0; i--) std::swap(o[i], o[rndInt(i + 1)]); q.o = o; q.a = (int)(std::find(o.begin(), o.end(), q.name) - o.begin()); qs.push_back(q); }
+      |             ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/disney.cpp:21:96: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   21 |             for (int i = 0; i < 3 && i < (int)ix.size(); i++) o.push_back(others[ix[i]].name); while (o.size() < 4) o.push_back("Nadie"); for (int i = 3; i > 0; i--) std::swap(o[i], o[rndInt(i + 1)]); q.o = o; q.a = (int)(std::find(o.begin(), o.end(), q.name) - o.begin()); qs.push_back(q); }
+      |                                                                                                ^~~~~
+dudo.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/domino.cpp: In member function 'virtual void {anonymous}::Domino::start()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/domino.cpp:33:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   33 |         for (auto& h : hands) std::sort(h.begin(), h.end()); msg = pl[turn].name + " empieza"; resetAi();
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/domino.cpp:33:62: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   33 |         for (auto& h : hands) std::sort(h.begin(), h.end()); msg = pl[turn].name + " empieza"; resetAi();
+      |                                                              ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/domino.cpp: In member function 'virtual void {anonymous}::Domino::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/domino.cpp:87:17: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   87 |                 for (int p = 0; p < N; p++) r.push_back({ p == winner ? win : 0, winner < 0 ? 'd' : p == winner ? 'w' : 'l' }); if (resigned >= 0) r[resigned].r = 'x';
+      |                 ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/domino.cpp:87:129: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   87 |                 for (int p = 0; p < N; p++) r.push_back({ p == winner ? win : 0, winner < 0 ? 'd' : p == winner ? 'w' : 'l' }); if (resigned >= 0) r[resigned].r = 'x';
+      |                                                                                                                                 ^~
+escoba.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp: In function 'bool {anonymous}::validBid(const Bid&, int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:12:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   12 |     if (face < 1 || face > 6 || qty < 1) return false; if (!b.has) return true;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:12:56: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   12 |     if (face < 1 || face > 6 || qty < 1) return false; if (!b.has) return true;
+      |                                                        ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:14:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   14 |     if (bf == 1 && face == 1) return qty > bq; if (bf == 1 && face != 1) return qty >= bq * 2 + 1;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:14:48: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   14 |     if (bf == 1 && face == 1) return qty > bq; if (bf == 1 && face != 1) return qty >= bq * 2 + 1;
+      |                                                ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:15:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   15 |     if (bf != 1 && face == 1) return qty >= (bq + 1) / 2; return qty > bq || (qty == bq && face > bf);
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:15:59: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   15 |     if (bf != 1 && face == 1) return qty >= (bq + 1) / 2; return qty > bq || (qty == bq && face > bf);
+      |                                                           ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp: In member function 'void {anonymous}::Dudo::challenge()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:55:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   55 |         if (over || revT > 0 || !bid.has) return; int total = 0; for (int i = 0; i < N; i++) if (active[i]) for (int v : dice[i]) if (v == bid.face || (bid.face != 1 && v == 1)) total++;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:55:51: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   55 |         if (over || revT > 0 || !bid.has) return; int total = 0; for (int i = 0; i < N; i++) if (active[i]) for (int v : dice[i]) if (v == bid.face || (bid.face != 1 && v == 1)) total++;
+      |                                                   ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp: In member function 'virtual void {anonymous}::Dudo::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:71:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   71 |         if (!pl[turn].ai) return; aiT += dt; if (aiT < aiWait) return;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/dudo.cpp:71:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   71 |         if (!pl[turn].ai) return; aiT += dt; if (aiT < aiWait) return;
+      |                                   ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/escoba.cpp: In member function 'void {anonymous}::Escoba::endHand()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/escoba.cpp:37:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   37 |         if (lastCapture >= 0) for (auto& c : table) pile[lastCapture].push_back(c); table.clear();
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/escoba.cpp:37:85: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   37 |         if (lastCapture >= 0) for (auto& c : table) pile[lastCapture].push_back(c); table.clear();
+      |                                                                                     ^~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/escoba.cpp:43:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   43 |         for (int p = 0; p < N; p++) scores[p] += add[p]; handEnd = true; showT = 0;
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/escoba.cpp:43:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   43 |         for (int p = 0; p < N; p++) scores[p] += add[p]; handEnd = true; showT = 0;
+      |                                                          ^~~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/escoba.cpp: In member function 'virtual void {anonymous}::Escoba::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/escoba.cpp:59:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   59 |             if (adv) newHand(); return; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/escoba.cpp:59:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   59 |             if (adv) newHand(); return; }
+      |                                 ^~~~~~
+generala.cpp
+guerra.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/generala.cpp: In function 'void {anonymous}::buildMS()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/generala.cpp:29:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   29 |     if (msBuilt) return; msBuilt = true; const double fact[6] = { 1, 1, 2, 6, 24, 120 };
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/generala.cpp:29:26: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   29 |     if (msBuilt) return; msBuilt = true; const double fact[6] = { 1, 1, 2, 6, 24, 120 };
+      |                          ^~~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/generala.cpp: In member function 'void {anonymous}::Generala::score(int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/generala.cpp:100:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  100 |         if (over || !rolled || rollAnim > 0 || sheets[turn][c] >= 0) return; int val = catScore(counts(dice), c);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/generala.cpp:100:78: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  100 |         if (over || !rolled || rollAnim > 0 || sheets[turn][c] >= 0) return; int val = catScore(counts(dice), c);
+      |                                                                              ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/generala.cpp:101:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  101 |         if (val > 0 && FIRST[c] && first[turn] && rollsLeft == 2) val = FIRST[c]; sheets[turn][c] = val; first[turn] = false; app->audio.play(val > 0 ? "place" : "lose"); advance();
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/generala.cpp:101:83: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  101 |         if (val > 0 && FIRST[c] && first[turn] && rollsLeft == 2) val = FIRST[c]; sheets[turn][c] = val; first[turn] = false; app->audio.play(val > 0 ? "place" : "lose"); advance();
+      |                                                                                   ^~~~~~
+laberinto.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/guerra.cpp: In member function 'void {anonymous}::War::play(int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/guerra.cpp:25:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   25 |         if (!canPlay(p)) return; table[p] = decks[p].front(); decks[p].erase(decks[p].begin()); played[p] = true; app->audio.play("click");
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/guerra.cpp:25:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   25 |         if (!canPlay(p)) return; table[p] = decks[p].front(); decks[p].erase(decks[p].begin()); played[p] = true; app->audio.play("click");
+      |                                  ^~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/guerra.cpp: In member function 'virtual void {anonymous}::War::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/guerra.cpp:72:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   72 |             if (ui.focused(id)) ui.drawFocus(br, 12); if (hit) play(i);
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/guerra.cpp:72:55: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   72 |             if (ui.focused(id)) ui.drawFocus(br, 12); if (hit) play(i);
+      |                                                       ^~
+ludo.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp: In member function 'void {anonymous}::Ludo::doRoll()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:44:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   44 |         if (over || cur()) return; int r = 1 + rndInt(6); dieShow = r; dieAnim = 0.5f; app->audio.play("roll"); sixes = r == 6 ? sixes + 1 : 0;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:44:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   44 |         if (over || cur()) return; int r = 1 + rndInt(6); dieShow = r; dieAnim = 0.5f; app->audio.play("roll"); sixes = r == 6 ? sixes + 1 : 0;
+      |                                    ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp: In member function 'void {anonymous}::Ludo::move(int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:56:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   56 |         for (int i = 0; i < caught; i++) bq.push_back({ 8, 0 }); if (nx == FIN) bq.push_back({ 6, 1 });
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:56:66: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   56 |         for (int i = 0; i < caught; i++) bq.push_back({ 8, 0 }); if (nx == FIN) bq.push_back({ 6, 1 });
+      |                                                                  ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:58:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   58 |         if (isRoll) extra = amount == 6; roll = 0; bonus = 0;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:58:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   58 |         if (isRoll) extra = amount == 6; roll = 0; bonus = 0;
+      |                                          ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp: In member function 'int {anonymous}::Ludo::aiPick()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:93:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   93 |         if (rnd01() < err) return lg[rndInt((int)lg.size())]; int best = lg[0]; float bs = -1e9f; for (int t : lg) { float v = scoreMove(turn, t, cur(), dg) + rnd01() * noise; if (v > bs) { bs = v; best = t; } } return best;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:93:63: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   93 |         if (rnd01() < err) return lg[rndInt((int)lg.size())]; int best = lg[0]; float bs = -1e9f; for (int t : lg) { float v = scoreMove(turn, t, cur(), dg) + rnd01() * noise; if (v > bs) { bs = v; best = t; } } return best;
+      |                                                               ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp: In member function 'virtual void {anonymous}::Ludo::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:126:17: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  126 |                 if (mv) g.ring(sx, sy, r + 3, 3, rgb(0xffffff)); if (barrier) g.ring(sx, sy, r + 2, 2, rgb(0x111111)); if (ui.focused(id)) ui.drawFocus(hr, r); if (hit) { move(t); return; } } }
+      |                 ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ludo.cpp:126:66: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  126 |                 if (mv) g.ring(sx, sy, r + 3, 3, rgb(0xffffff)); if (barrier) g.ring(sx, sy, r + 2, 2, rgb(0x111111)); if (ui.focused(id)) ui.drawFocus(hr, r); if (hit) { move(t); return; } } }
+      |                                                                  ^~
+mancala.cpp
+memoria.cpp
+mentemaestra.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/memoria.cpp: In member function 'virtual void {anonymous}::Memo::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/memoria.cpp:49:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   49 |             if (resigned >= 0) r[resigned].r = 'x'; finish(r, sm); } return; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/memoria.cpp:49:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   49 |             if (resigned >= 0) r[resigned].r = 'x'; finish(r, sm); } return; }
+      |                                                     ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/memoria.cpp: In member function 'virtual void {anonymous}::Memo::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/memoria.cpp:87:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   87 |             if (ui.focused(id)) ui.drawFocus(r, 12); if (hit) flip(i);
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/memoria.cpp:87:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   87 |             if (ui.focused(id)) ui.drawFocus(r, 12); if (hit) flip(i);
+      |                                                      ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentemaestra.cpp: In member function 'virtual void {anonymous}::MM::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentemaestra.cpp:124:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  124 |             if (ui.focused(id)) ui.drawFocus(r, 14); if (hit) { cur[k] = 0; app->audio.play("click"); }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentemaestra.cpp:124:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  124 |             if (ui.focused(id)) ui.drawFocus(r, 14); if (hit) { cur[k] = 0; app->audio.play("click"); }
+      |                                                      ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentemaestra.cpp:132:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  132 |             if (ui.focused(id)) ui.drawFocus(r, 16); if (hit) place(c);
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentemaestra.cpp:132:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  132 |             if (ui.focused(id)) ui.drawFocus(r, 16); if (hit) place(c);
+      |                                                      ^~
+mentiroso.cpp
+naval.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp: In member function 'void {anonymous}::Liar::play(const std::vector<int>&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:29:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   29 |         if (over || revT > 0 || pendingWin >= 0 || idx.empty() || idx.size() > 4) return; int p = turn; std::vector<int> u = idx; std::sort(u.begin(), u.end(), std::greater<int>());
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:29:91: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   29 |         if (over || revT > 0 || pendingWin >= 0 || idx.empty() || idx.size() > 4) return; int p = turn; std::vector<int> u = idx; std::sort(u.begin(), u.end(), std::greater<int>());
+      |                                                                                           ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:32:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   32 |         if (hands[p].empty()) pendingWin = p; turn = nextP(p); app->audio.play("place"); resetAi();
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:32:47: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   32 |         if (hands[p].empty()) pendingWin = p; turn = nextP(p); app->audio.play("place"); resetAi();
+      |                                               ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp: In member function 'void {anonymous}::Liar::challenge()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:35:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   35 |         if (over || revT > 0 || !last.has) return; int p = turn; bool truth = true; for (auto& c : last.cards) if (c.v != last.rank) truth = false; int loser = truth ? p : last.p;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:35:52: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   35 |         if (over || revT > 0 || !last.has) return; int p = turn; bool truth = true; for (auto& c : last.cards) if (c.v != last.rank) truth = false; int loser = truth ? p : last.p;
+      |                                                    ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp: In member function 'double {anonymous}::Liar::lieProb(const std::vector<{anonymous}::Card>&) const':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:44:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   44 |         if (!last.has) return 0; int h = 0; for (auto& c : my) if (c.v == last.rank) h++; int avail = 4 - h; if (last.count > avail) return 1;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:44:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   44 |         if (!last.has) return 0; int h = 0; for (auto& c : my) if (c.v == last.rank) h++; int avail = 4 - h; if (last.count > avail) return 1;
+      |                                  ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp: In member function 'bool {anonymous}::Liar::wantChallenge(const std::vector<{anonymous}::Card>&, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:52:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   52 |         if (!last.has) return false; const float NOISE[4] = { 0, 0.5f, 0.16f, 0.04f }; double pl2 = lieProb(my); if (pl2 >= 1) return lv == 1 ? rnd01() < 0.65f : true;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:52:38: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   52 |         if (!last.has) return false; const float NOISE[4] = { 0, 0.5f, 0.16f, 0.04f }; double pl2 = lieProb(my); if (pl2 >= 1) return lv == 1 ? rnd01() < 0.65f : true;
+      |                                      ^~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:56:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   56 |         if ((int)hands[last.p].size() <= 2) thr -= 0.15; if ((int)my.size() <= 3) thr += 0.05; return pl2 > thr;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:56:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   56 |         if ((int)hands[last.p].size() <= 2) thr -= 0.15; if ((int)my.size() <= 3) thr += 0.05; return pl2 > thr;
+      |                                                          ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp: In member function 'virtual void {anonymous}::Liar::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:124:17: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  124 |                 if (ui.focused(id)) ui.drawFocus(r, 10); if (hit) { if (!sel[i] && ns >= 4) { app->toast("Máximo 4 cartas"); } else sel[i] = !sel[i]; app->audio.play("click"); }
+      |                 ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:124:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  124 |                 if (ui.focused(id)) ui.drawFocus(r, 10); if (hit) { if (!sel[i] && ns >= 4) { app->toast("Máximo 4 cartas"); } else sel[i] = !sel[i]; app->audio.play("click"); }
+      |                                                          ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:127:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  127 |             if (mine && !h.empty() && !(ui.focus)) ui.setFocusIfNone(hid("lc", 0)); (void)rows;
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/mentiroso.cpp:127:85: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  127 |             if (mine && !h.empty() && !(ui.focus)) ui.setFocusIfNone(hid("lc", 0)); (void)rows;
+      |                                                                                     ^
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/naval.cpp: In member function 'virtual void {anonymous}::Naval::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/naval.cpp:86:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   86 |             if (ui.button("Listo, soy yo", { 490, 350, 300, 56 }, 3)) cover = false; ui.setFocusIfNone(hid("Listo, soy yo", 490 * 7 + 350)); return; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/naval.cpp:86:86: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   86 |             if (ui.button("Listo, soy yo", { 490, 350, 300, 56 }, 3)) cover = false; ui.setFocusIfNone(hid("Listo, soy yo", 490 * 7 + 350)); return; }
+      |                                                                                      ^~
+negocios.cpp
+okey.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp: In member function 'bool {anonymous}::Negocios::canBuild(int, int) const':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:42:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   42 |         if (k < 0 || k >= N || BOARD[k].t != 'p' || owner[k] != p || !alive[p] || !ownsAll(p, BOARD[k].g)) return false; auto gs = groupSq(BOARD[k].g);
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:42:122: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   42 |         if (k < 0 || k >= N || BOARD[k].t != 'p' || owner[k] != p || !alive[p] || !ownsAll(p, BOARD[k].g)) return false; auto gs = groupSq(BOARD[k].g);
+      |                                                                                                                          ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:43:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   43 |         for (int q : gs) if (mort[q]) return false; if (houses[k] >= 5 || money[p] < hcost(k)) return false; int mn = 9; for (int q : gs) mn = std::min(mn, houses[q]); return houses[k] <= mn; }
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:43:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   43 |         for (int q : gs) if (mort[q]) return false; if (houses[k] >= 5 || money[p] < hcost(k)) return false; int mn = 9; for (int q : gs) mn = std::min(mn, houses[q]); return houses[k] <= mn; }
+      |                                                     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp: In member function 'virtual void {anonymous}::Negocios::start()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:61:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   61 |         for (int i = 0; i < N_S; i++) deckS.push_back(i); for (int i = 0; i < N_C; i++) deckC.push_back(i);
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:61:59: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   61 |         for (int i = 0; i < N_S; i++) deckS.push_back(i); for (int i = 0; i < N_C; i++) deckC.push_back(i);
+      |                                                           ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:62:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   62 |         for (int i = N_S - 1; i > 0; i--) std::swap(deckS[i], deckS[rndInt(i + 1)]); for (int i = N_C - 1; i > 0; i--) std::swap(deckC[i], deckC[rndInt(i + 1)]);
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:62:86: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   62 |         for (int i = N_S - 1; i > 0; i--) std::swap(deckS[i], deckS[rndInt(i + 1)]); for (int i = N_C - 1; i > 0; i--) std::swap(deckC[i], deckC[rndInt(i + 1)]);
+      |                                                                                      ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp: In member function 'void {anonymous}::Negocios::charge(int, int, int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:68:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   68 |         if (amt <= 0) return; if (money[p] >= amt) { transfer(p, amt, to, per); return; }
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:68:31: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   68 |         if (amt <= 0) return; if (money[p] >= amt) { transfer(p, amt, to, per); return; }
+      |                               ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp: In member function 'void {anonymous}::Negocios::doRoll(int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:109:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  109 |         if (phase == MOVE) fin(); chk(); }
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:109:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  109 |         if (phase == MOVE) fin(); chk(); }
+      |                                   ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp: In member function 'void {anonymous}::Negocios::advance()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:136:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  136 |         if (chk()) return; int i = turn; do { i = (i + 1) % n; } while (!alive[i]); if (i <= turn) round++; turn = i; dbl = 0; extra = false; phase = ROLL; pend = -1; hasDebt = false; cont = 0; manage = false; aiT = 0; mi = 0;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:136:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  136 |         if (chk()) return; int i = turn; do { i = (i + 1) % n; } while (!alive[i]); if (i <= turn) round++; turn = i; dbl = 0; extra = false; phase = ROLL; pend = -1; hasDebt = false; cont = 0; manage = false; aiT = 0; mi = 0;
+      |                            ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp: In member function 'void {anonymous}::Negocios::bankrupt(int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:139:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  139 |         if (!alive[p]) return; for (int k : OWN) if (BOARD[k].t == 'p' && owner[k] == p && houses[k] > 0) { money[p] += houses[k] * hcost(k) / 2; houses[k] = 0; }
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:139:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  139 |         if (!alive[p]) return; for (int k : OWN) if (BOARD[k].t == 'p' && owner[k] == p && houses[k] > 0) { money[p] += houses[k] * hcost(k) / 2; houses[k] = 0; }
+      |                                ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp: In member function 'virtual void {anonymous}::Negocios::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:185:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  185 |             if (A || touch(mBtn(0))) propose(); if (B || touch(mBtn(4))) tradeOn = false; return; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:185:49: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  185 |             if (A || touch(mBtn(0))) propose(); if (B || touch(mBtn(4))) tradeOn = false; return; }
+      |                                                 ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:191:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  191 |             if (bB) build(p, k); if (sS) sell(p, k); if (mM) { if (mort[k]) unmortgage(p, k); else mortgage(p, k); } if (q && phase == DEBT) declareBankrupt(p); else if (q && n > 1 && aliveCount() > 1) { tradeOn = true; tf = 0; tp = partnerAfter(p, 1); gi = -1; ti = -1; tcash = 0; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:191:34: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  191 |             if (bB) build(p, k); if (sS) sell(p, k); if (mM) { if (mort[k]) unmortgage(p, k); else mortgage(p, k); } if (q && phase == DEBT) declareBankrupt(p); else if (q && n > 1 && aliveCount() > 1) { tradeOn = true; tf = 0; tp = partnerAfter(p, 1); gi = -1; ti = -1; tcash = 0; }
+      |                                  ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:192:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  192 |             if ((B || touch(mBtn(4))) && phase != DEBT) manage = false; return; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:192:73: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  192 |             if ((B || touch(mBtn(4))) && phase != DEBT) manage = false; return; }
+      |                                                                         ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp: In member function 'virtual void {anonymous}::Negocios::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:229:40: warning: unused variable 'mid' [-Wunused-variable]
+  229 |         float cx = BX + C * 5.5f; Rect mid{ BX + C + 8, BY + C + 8, C * 9 - 16, C * 9 - 16 };
+      |                                        ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp: In lambda function:
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp:19:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   19 |         if (!rem) return { WILD_PTS * w, 0, 0, -1 }; long key = (long)rem * 16 + w; auto h = memo.find(key); if (h != memo.end()) return h->second;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp:19:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   19 |         if (!rem) return { WILD_PTS * w, 0, 0, -1 }; long key = (long)rem * 16 + w; auto h = memo.find(key); if (h != memo.end()) return h->second;
+      |                                                      ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp: In function '{anonymous}::An {anonymous}::analyzeT(const std::vector<Tl>&, int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp:30:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   30 |         for (int u = 0; u < r.u; u++) grp.push_back(wl[wl.size() - 1 - (W - w) - u]); for (int x : grp) used[x] = true; a.melds.push_back(grp); rem &= ~r.m; w -= r.u; }
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp:30:87: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   30 |         for (int u = 0; u < r.u; u++) grp.push_back(wl[wl.size() - 1 - (W - w) - u]); for (int x : grp) used[x] = true; a.melds.push_back(grp); rem &= ~r.m; w -= r.u; }
+      |                                                                                       ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp:31:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   31 |     for (size_t i = 0; i < hand.size(); i++) if (!used[i]) a.loose.push_back((int)i); return a;
+      |     ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp:31:87: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   31 |     for (size_t i = 0; i < hand.size(); i++) if (!used[i]) a.loose.push_back((int)i); return a;
+      |                                                                                       ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp: In member function 'void {anonymous}::Okey::discard(int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp:55:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   55 |         if (!hasDrawn || idx < 0 || idx >= (int)H[turn].size()) return; Tl t = H[turn][idx]; H[turn].erase(H[turn].begin() + idx); app->audio.play("place");
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/okey.cpp:55:73: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   55 |         if (!hasDrawn || idx < 0 || idx >= (int)H[turn].size()) return; Tl t = H[turn][idx]; H[turn].erase(H[turn].begin() + idx); app->audio.play("place");
+      |                                                                         ^~
+In file included from /__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios.cpp:4:
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios_data.h: At global scope:
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/negocios_data.h:49:20: warning: 'nd::GNAME' defined but not used [-Wunused-variable]
+   49 | static const char* GNAME[8]={"Marrón","Celeste","Rosa","Naranja","Rojo","Amarillo","Verde","Azul"};
+      |                    ^~~~~
+party1.cpp
+party2.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/party1.cpp: In member function 'virtual void {anonymous}::ActGame::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/party1.cpp:90:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   90 |             if (flashT > 0) g.textShadow(flash, 620, 110, 26, pal::gold, F_TITLE, AL_C); return; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/party1.cpp:90:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   90 |             if (flashT > 0) g.textShadow(flash, 620, 110, 26, pal::gold, F_TITLE, AL_C); return; }
+      |                                                                                          ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/party1.cpp:97:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   97 |             if (ui.button("✅ Acertaron", { 380, 500, 250, 60 }, 3)) ok(); if (ui.button("⏭ Pasar", { 650, 500, 200, 60 }, 2)) skip(); if (tabu && ui.button("🚫 ¡TABÚ!", { 870, 500, 250, 60 }, 1)) buzz(); if (ui.button("Terminar turno", { 650, 575, 220, 50 }, 2)) endTurn(); ui.setFocusIfNone(hid("✅ Acertaron", 380 * 7 + 500)); }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/party1.cpp:97:76: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   97 |             if (ui.button("✅ Acertaron", { 380, 500, 250, 60 }, 3)) ok(); if (ui.button("⏭ Pasar", { 650, 500, 200, 60 }, 2)) skip(); if (tabu && ui.button("🚫 ¡TABÚ!", { 870, 500, 250, 60 }, 1)) buzz(); if (ui.button("Terminar turno", { 650, 575, 220, 50 }, 2)) endTurn(); ui.setFocusIfNone(hid("✅ Acertaron", 380 * 7 + 500)); }
+      |                                                                            ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/party2.cpp: In member function 'virtual void {anonymous}::Personajes::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/party2.cpp:123:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  123 |         if (phase == 0) ui.setFocusIfNone(hid("pj", 0)); if (phase == 1 || phase == 2) ui.setFocusIfNone(hid("pj", 0));
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/party2.cpp:123:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  123 |         if (phase == 0) ui.setFocusIfNone(hid("pj", 0)); if (phase == 1 || phase == 2) ui.setFocusIfNone(hid("pj", 0));
+      |                                                          ^~
+puntoscajas.cpp
+registry.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/puntoscajas.cpp: In function 'int {anonymous}::giveaway(const Bd&, const Ln&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/puntoscajas.cpp:29:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   29 |             if (boxCount(C, bx, by) != 3) continue; int gw = C.gw, w1 = gw + 1; found = true;
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/puntoscajas.cpp:29:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   29 |             if (boxCount(C, bx, by) != 3) continue; int gw = C.gw, w1 = gw + 1; found = true;
+      |                                                     ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/puntoscajas.cpp: In member function 'void {anonymous}::Dots::move(const {anonymous}::Ln&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/puntoscajas.cpp:64:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   64 |         if (over) return; char& cell = l.horiz ? B.h[l.r * B.gw + l.c] : B.v[l.r * (B.gw + 1) + l.c]; if (cell) return;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/puntoscajas.cpp:64:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   64 |         if (over) return; char& cell = l.horiz ? B.h[l.r * B.gw + l.c] : B.v[l.r * (B.gw + 1) + l.c]; if (cell) return;
+      |                           ^~~~
+reversi.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp: In function 'bool {anonymous}::flips(const signed char*, int, int, std::vector<int>*)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp:15:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   15 |     if (b[i]) return false; int r = i >> 3, col = i & 7; bool any = false;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp:15:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   15 |     if (b[i]) return false; int r = i >> 3, col = i & 7; bool any = false;
+      |                             ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp: In function 'double {anonymous}::neg(signed char*, int, int, double, double, Ctr&, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp:50:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   50 |         if (sc > best) best = sc; if (best > alpha) alpha = best; if (alpha >= beta) break;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp:50:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   50 |         if (sc > best) best = sc; if (best > alpha) alpha = best; if (alpha >= beta) break;
+      |                                   ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp: In member function 'virtual void {anonymous}::Reversi::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp:86:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   86 |         for (float& f : flipT) f = std::max(0.f, f - dt); msgT = std::max(0.f, msgT - dt);
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/reversi.cpp:86:59: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   86 |         for (float& f : flipT) f = std::max(0.f, f - dt); msgT = std::max(0.f, msgT - dt);
+      |                                                           ^~~~
+ruleta.cpp
+rummy.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ruleta.cpp: In function 'bool {anonymous}::wins(int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ruleta.cpp:18:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   18 |     if (k < 100) return k == n; if (isZero(n)) return false;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ruleta.cpp:18:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   18 |     if (k < 100) return k == n; if (isZero(n)) return false;
+      |                                 ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ruleta.cpp: In member function 'virtual void {anonymous}::Ruleta::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ruleta.cpp:62:17: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   62 |                 for (int p = 0; p < N; p++) r.push_back({ chips[p], gone[p] ? 'x' : chips[p] == best ? (nb > 1 ? 'd' : 'w') : 'l' }); std::string w; for (int p = 0; p < N; p++) if (!gone[p] && chips[p] == best) w += (w.empty() ? "" : " y ") + pl[p].name; finish(r, "Ganó " + w + " con " + std::to_string(best) + " fichas"); }
+      |                 ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/ruleta.cpp:62:135: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   62 |                 for (int p = 0; p < N; p++) r.push_back({ chips[p], gone[p] ? 'x' : chips[p] == best ? (nb > 1 ? 'd' : 'w') : 'l' }); std::string w; for (int p = 0; p < N; p++) if (!gone[p] && chips[p] == best) w += (w.empty() ? "" : " y ") + pl[p].name; finish(r, "Ganó " + w + " con " + std::to_string(best) + " fichas"); }
+      |                                                                                                                                       ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp: In member function 'void {anonymous}::Rummy::undoStage()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:41:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   41 |         if (!played && pool.empty()) return; table = tableSnap; hands[turn] = handSnap; melded[turn] = meldedSnap; pool.clear(); selP.clear(); staged.clear(); stagedTiles.clear(); stagedValue = 0; sortHand(hands[turn]); sel.assign(hands[turn].size(), false); played = false;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:41:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   41 |         if (!played && pool.empty()) return; table = tableSnap; hands[turn] = handSnap; melded[turn] = meldedSnap; pool.clear(); selP.clear(); staged.clear(); stagedTiles.clear(); stagedValue = 0; sortHand(hands[turn]); sel.assign(hands[turn].size(), false); played = false;
+      |                                              ^~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp: In member function 'bool {anonymous}::Rummy::layNew(const std::vector<int>&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:47:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   47 |         for (int id : ids) takeTile(id); selP.assign(pool.size(), false); std::vector<int> o; for (auto& c : a.cells) o.push_back(c.id); table.push_back(o); played = true;
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:47:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   47 |         for (int id : ids) takeTile(id); selP.assign(pool.size(), false); std::vector<int> o; for (auto& c : a.cells) o.push_back(c.id); table.push_back(o); played = true;
+      |                                          ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:49:9: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+   49 |         else msg = pl[turn].name + " bajó " + std::to_string(ids.size()) + " fichas"; sel.assign(hands[turn].size(), false); app->audio.play("place");
+      |         ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:49:87: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+   49 |         else msg = pl[turn].name + " bajó " + std::to_string(ids.size()) + " fichas"; sel.assign(hands[turn].size(), false); app->audio.play("place");
+      |                                                                                       ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:50:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   50 |         if (hands[turn].empty() && pool.empty() && melded[turn]) endRound(turn); return true;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:50:82: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   50 |         if (hands[turn].empty() && pool.empty() && melded[turn]) endRound(turn); return true;
+      |                                                                                  ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp: In member function 'bool {anonymous}::Rummy::addTo(int, const std::vector<int>&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:54:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   54 |         for (int id : ids) takeTile(id); selP.assign(pool.size(), false); table[mi].clear(); for (auto& c : a.cells) table[mi].push_back(c.id); played = true; sel.assign(hands[turn].size(), false); msg = pl[turn].name + " agregó fichas"; app->audio.play("place");
+      |         ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:54:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   54 |         for (int id : ids) takeTile(id); selP.assign(pool.size(), false); table[mi].clear(); for (auto& c : a.cells) table[mi].push_back(c.id); played = true; sel.assign(hands[turn].size(), false); msg = pl[turn].name + " agregó fichas"; app->audio.play("place");
+      |                                          ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:55:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   55 |         if (hands[turn].empty() && pool.empty()) endRound(turn); return true;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:55:66: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   55 |         if (hands[turn].empty() && pool.empty()) endRound(turn); return true;
+      |                                                                  ^~~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp: In member function 'virtual void {anonymous}::Rummy::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:109:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  109 |             if (ui.focused(id)) ui.drawFocus(mr, 8); if (hit) { if (haveSel) { if (addTo((int)mi, selIds)) return; } else if (breakMeld((int)mi)) return; } x += w + 6; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/rummy.cpp:109:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  109 |             if (ui.focused(id)) ui.drawFocus(mr, 8); if (hit) { if (haveSel) { if (addTo((int)mi, selIds)) return; } else if (breakMeld((int)mi)) return; } x += w + 6; }
+      |                                                      ^~
+silueta.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/silueta.cpp: In member function 'virtual void {anonymous}::Silueta::start()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/silueta.cpp:23:13: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   23 |             for (int i = (int)out.size() - 1; i > 0; i--) std::swap(out[i], out[rndInt(i + 1)]); Q q; q.name = c.name; q.film = c.film; q.art = c.art; q.a = 0; for (size_t i = 0; i < out.size(); i++) { q.o.push_back(out[i].name); if (out[i].name == c.name) q.a = (int)i; } while (q.o.size() < 4) q.o.push_back("Nadie"); qs.push_back(q); }
+      |             ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/silueta.cpp:23:98: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   23 |             for (int i = (int)out.size() - 1; i > 0; i--) std::swap(out[i], out[rndInt(i + 1)]); Q q; q.name = c.name; q.film = c.film; q.art = c.art; q.a = 0; for (size_t i = 0; i < out.size(); i++) { q.o.push_back(out[i].name); if (out[i].name == c.name) q.a = (int)i; } while (q.o.size() < 4) q.o.push_back("Nadie"); qs.push_back(q); }
+      |                                                                                                  ^
+tictactoe.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/tictactoe.cpp: In function 'int {anonymous}::score(int*, int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/tictactoe.cpp:9:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+    9 |     if (win(b, me)) return 1; if (win(b, 3 - me)) return -1;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/tictactoe.cpp:9:31: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    9 |     if (win(b, me)) return 1; if (win(b, 3 - me)) return -1;
+      |                               ^~
+trivia.cpp
+truco.cpp
+yacht.cpp
+zilch.cpp
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp: In function 'int {anonymous}::power(const Cd&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:10:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   10 |     if (c.r == 1) return c.s == 2 ? 14 : c.s == 3 ? 13 : 8; if (c.r == 7) return c.s == 2 ? 12 : c.s == 0 ? 11 : 4;
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:10:61: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   10 |     if (c.r == 1) return c.s == 2 ? 14 : c.s == 3 ? 13 : 8; if (c.r == 7) return c.s == 2 ? 12 : c.s == 0 ? 11 : 4;
+      |                                                             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp: In member function 'void {anonymous}::Truco::respond(int, int)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:63:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   63 |         if (!hasPend) return; Pend pd = pend;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:63:31: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   63 |         if (!hasPend) return; Pend pd = pend;
+      |                               ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp: In member function 'float {anonymous}::Truco::evalCard(int, const std::vector<World>&, int) const':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:106:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  106 |         if (ws.empty()) return 0.5f; float sum = 0; for (auto& w : ws) { auto hs = w.h; hs[idx] = hands[idx]; auto tr = trick; int t = turn; int st = trick.empty() ? turn : trick[0].p; auto res = results; if (ci >= 0) { tr.push_back({ idx, hs[idx][ci] }); hs[idx].erase(hs[idx].begin() + ci); t = (idx + 1) % N; }
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:106:38: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  106 |         if (ws.empty()) return 0.5f; float sum = 0; for (auto& w : ws) { auto hs = w.h; hs[idx] = hands[idx]; auto tr = trick; int t = turn; int st = trick.empty() ? turn : trick[0].p; auto res = results; if (ci >= 0) { tr.push_back({ idx, hs[idx][ci] }); hs[idx].erase(hs[idx].begin() + ci); t = (idx + 1) % N; }
+      |                                      ^~~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp: In member function 'void {anonymous}::Truco::aiAct()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:125:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  125 |             if (lv == 1 && rnd01() < 0.4f) k = -1; if (k >= 0) { call(p, k); return; } }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:125:52: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  125 |             if (lv == 1 && rnd01() < 0.4f) k = -1; if (k >= 0) { call(p, k); return; } }
+      |                                                    ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp: In member function 'virtual void {anonymous}::Truco::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:150:13: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  150 |             for (int p = 0; p < N; p++) for (size_t k = 0; k < dealt[p].size(); k++) { Rect r{ 330 + p * (860.f / N) + k * 34, 508, 30, 42 }; sp::draw(g, r, dealt[p][k].s, dealt[p][k].r, true); } g.text("A: seguir", 765, 586, 14, pal::cream, F_BODY, AL_C); return; }
+      |             ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:150:197: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  150 |             for (int p = 0; p < N; p++) for (size_t k = 0; k < dealt[p].size(); k++) { Rect r{ 330 + p * (860.f / N) + k * 34, 508, 30, 42 }; sp::draw(g, r, dealt[p][k].s, dealt[p][k].r, true); } g.text("A: seguir", 765, 586, 14, pal::cream, F_BODY, AL_C); return; }
+      |                                                                                                                                                                                                     ^
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:163:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  163 |             if (canPlay && n && !mine == false) ui.setFocusIfNone(hid("tc", 0)); if (!canPlay) g.text("Responde con los botones", 765, 470, 15, pal::cream, F_BODY, AL_C); }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/truco.cpp:163:82: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  163 |             if (canPlay && n && !mine == false) ui.setFocusIfNone(hid("tc", 0)); if (!canPlay) g.text("Responde con los botones", 765, 470, 15, pal::cream, F_BODY, AL_C); }
+      |                                                                                  ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/yacht.cpp: In member function 'virtual void {anonymous}::Yacht::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/yacht.cpp:205:21: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  205 |                     if (!fcell) fcell = id; if (ui.focused(id)) { ui.drawFocus(cell, 6); fc = true; }
+      |                     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/yacht.cpp:205:45: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  205 |                     if (!fcell) fcell = id; if (ui.focused(id)) { ui.drawFocus(cell, 6); fc = true; }
+      |                                             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp: In function 'int {anonymous}::scoreSel(const std::vector<int>&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:9:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+    9 |     if (sel.empty()) return 0; int c[7] = {}; for (int v : sel) c[v]++; int kinds = 0, pairs = 0; for (int v = 1; v <= 6; v++) { if (c[v]) kinds++; if (c[v] == 2) pairs++; }
+      |     ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:9:32: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    9 |     if (sel.empty()) return 0; int c[7] = {}; for (int v : sel) c[v]++; int kinds = 0, pairs = 0; for (int v = 1; v <= 6; v++) { if (c[v]) kinds++; if (c[v] == 2) pairs++; }
+      |                                ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp: In function 'bool {anonymous}::hasAny(const std::vector<int>&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:17:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   17 |     for (int v : d) if (v == 1 || v == 5) return true; int c[7] = {}; for (int v : d) c[v]++; for (int v = 1; v <= 6; v++) if (c[v] >= 3) return true; return scoreSel(d) > 0;
+      |     ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:17:56: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   17 |     for (int v : d) if (v == 1 || v == 5) return true; int c[7] = {}; for (int v : d) c[v]++; for (int v = 1; v <= 6; v++) if (c[v] >= 3) return true; return scoreSel(d) > 0;
+      |                                                        ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp: In member function 'void {anonymous}::Zilch::bank()':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:64:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   64 |         if (!canBank()) return; int f = turnScore + selScore(); totals[turn] += f;
+      |         ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:64:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   64 |         if (!canBank()) return; int f = turnScore + selScore(); totals[turn] += f;
+      |                                 ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp: In member function 'virtual void {anonymous}::Zilch::update(float, Input&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:77:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   77 |             if (resigned >= 0) r[resigned].r = 'x'; std::string sm = "Puntos:"; for (int t : totals) sm += " " + std::to_string(t); finish(r, sm); } return; }
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:77:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   77 |             if (resigned >= 0) r[resigned].r = 'x'; std::string sm = "Puntos:"; for (int t : totals) sm += " " + std::to_string(t); finish(r, sm); } return; }
+      |                                                     ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:90:17: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   90 |                 for (int i : o.idx) plan.push_back({ 0, i, (0.45f + rnd01() * 0.35f) * sp }); plan.push_back({ bk ? 2 : 1, 0, (0.9f + rnd01() * 0.7f) * sp });
+      |                 ^~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:90:95: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   90 |                 for (int i : o.idx) plan.push_back({ 0, i, (0.45f + rnd01() * 0.35f) * sp }); plan.push_back({ bk ? 2 : 1, 0, (0.9f + rnd01() * 0.7f) * sp });
+      |                                                                                               ^~~~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp: In member function 'virtual void {anonymous}::Zilch::draw(Gfx&, UI&)':
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:108:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  108 |             if (ui.focused(id)) ui.drawFocus(r, 14); if (hit) toggle(i);
+      |             ^~
+/__w/yachtfriends-switch/yachtfriends-switch/source/games/zilch.cpp:108:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  108 |             if (ui.focused(id)) ui.drawFocus(r, 14); if (hit) toggle(i);
+      |                                                      ^~
+built ... YachtFriends.nacp
+linking YachtFriends.elf
+Visiting directories...
+Calculating metadata...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/LICENSE-twemoji.txt to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f004.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f0cf.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f17f.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f308.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f30a.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f30d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f311.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f319.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f332.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f333.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f334.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f339.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f33d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f33f.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f340.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f345.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f347.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f349.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f34a.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f34b.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f34c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f34d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f34e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f350.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f351.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f352.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f353.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f354.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f355.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f366.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f369.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f36a.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f370.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f381.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f383.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f384.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f388.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f389.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3a1.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3a8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3a9.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3ac.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3ad.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3ae.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3af.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3b0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3b1.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3b2.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3b5.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3b8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3be.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3c0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3c1.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3c3.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3c6.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3cd.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3d9.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3dd.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3e0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3e6.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3f0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3f3.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f3fa.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f400.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f405.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f406.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f407.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f408.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f409.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f40a.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f40b.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f40d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f40e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f410.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f412.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f413.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f414.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f415.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f416.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f417.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f418.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f419.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f41b.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f41c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f41e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f41f.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f420.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f422.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f426.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f427.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f428.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f42d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f42e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f42f.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f430.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f431.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f435.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f436.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f437.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f438.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f439.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f43b.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f43c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f43e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f446.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f451.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f464.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f465.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f466.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f467.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f468.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f469.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f46e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f474.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f476.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f477.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f47b.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f47d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f480.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f48d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f48e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f494.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4a3.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4a5.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4a7.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4ac.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4b0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4b8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4bb.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4ca.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4d6.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4da.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4e6.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4f1.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f4fa.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f504.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f507.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f50a.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f50d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f510.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f511.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f514.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f522.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f524.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f525.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f52a.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f52c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f532.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f534.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f535.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f56f.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f575.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f579.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f5e3.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f600.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f602.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f608.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f60d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f60e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f631.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f634.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f642.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f680.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f681.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f682.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f68c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f691.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f692.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f695.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f697.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f69c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f6a2.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f6ab.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f6b2.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f6e5.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f6f8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f7e0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f7e1.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f7e2.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f914.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f916.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f91d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f920.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f925.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f942.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f947.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f948.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f949.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f955.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f95d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f965.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f96d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f980.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f981.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f984.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f986.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f988.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f989.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f98a.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f98b.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f98c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f98e.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f996.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f997.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f998.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f999.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f99c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f99d.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9a8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9b8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9ca.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9d9.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9da.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9dc-200d-2640-fe0f.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9dc-200d-2642-fe0f.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9de.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9df.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9e0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9e9.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9f8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1f9f9.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1faa8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/1fac0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/21a9.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/23ed.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/23f1.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/23f8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/25b6.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/25c0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2600.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/263a.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/265f.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2660.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2663.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2665.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2666.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2694.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2699.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/26a0.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/26a1.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/26aa.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/26ab.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/26bd.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/26c4.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/26d3.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/26f5.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2705.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2708.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2714.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2716.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/274c.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2753.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2764.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2795.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2b06.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2b50.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/2b55.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/34-20e3.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/emoji/37-20e3.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/fonts/DejaVuSans-Bold.ttf to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/fonts/DejaVuSans.ttf to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/fonts/future-narrow.ttf to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/img/wood.jpg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/mus/juego-de-mesa.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/mus/sala-de-juegos.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/mus/tarde-tranquila.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/baymax.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/bb8.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/bestia.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/buzz.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/donald.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/elsa.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/eve.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/garfio.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/goofy.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/grogu.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/hades.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/jack.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/lampara.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/leon.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/malefica.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/mate.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/merlin.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/mickey.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/mike.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/minnie.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/olaf.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/papa.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/peterpan.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/pinocho.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/poppins.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/r2d2.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/rana.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/rapunzel.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/stitch.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/sulley.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/up.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/vader.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/walle.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/woody.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/sil/zorro.png to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/snd/click.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/snd/dice.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/snd/flip.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/snd/lose.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/snd/place.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/snd/win.ogg to RomFS image...
+Writing /__w/yachtfriends-switch/yachtfriends-switch/romfs/web/pad.html to RomFS image...
+built ... YachtFriends.nro
