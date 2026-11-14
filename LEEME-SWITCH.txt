@@ -1,0 +1,60 @@
+YACHT & FRIENDS — versión nativa para Nintendo Switch (homebrew)
+================================================================
+Primera tanda: Yacht, 3 en raya, 4 en línea, Damas y Laberinto (1 a 4 jugadores), con sus IA.
+El resto de los 49 juegos aparece en la lista como "Próximamente" y se van sumando por tandas.
+
+INSTALAR
+1. Copiá YachtFriends.nro a la tarjeta SD, en la carpeta /switch/
+2. Abrí el Homebrew Menu en modo aplicación (manteniendo R al abrir un juego, con Atmosphère).
+   En modo applet (desde el Álbum) el teclado para escribir nombres y la pantalla de conectar mandos pueden no abrir.
+3. Los datos (nombre, personaje, estadísticas) se guardan en /switch/YachtFriends/datos.txt
+
+PANTALLA
+- Modo portátil: 1280x720, se puede jugar tocando la pantalla.
+- En la TV con el dock: 1920x1080 (cambia sola al poner o sacar la consola del dock).
+
+MANDOS
+Un Joy-Con por jugador (en vertical, siempre): el juego detecta si es el IZQUIERDO o el DERECHO y las guías de pantalla se adaptan solas.
+ - Joy-Con IZQUIERDO: palanca = mover; los 4 botones de flechas hacen A (abajo-físico, queda a la derecha al sostenerlo en vertical), B (izq-físico, queda abajo), X (der-físico, queda arriba), Y (arriba-físico, queda a la izquierda). El botón "−" hace de "+" (menú / iniciar); ZL (o L) hace de "−" (cómo se juega); SL/SR hacen de L/R.
+ - Joy-Con DERECHO: palanca = mover; A B X Y son los propios botones; "+" es "+"; ZR (o R) hace de "−" (cómo se juega); SL/SR hacen de L/R.
+ - Pro Controller o par de Joy-Con: como siempre.
+En la pantalla, cada guía dibuja el botón con su posición real (rombo con el botón encendido, SL/SR, ZL/ZR, "−"…).
+En Opciones > "Conectar mandos" se abre la pantalla del sistema para conectarlos.
+
+- El mando 1 es el anfitrión: solo él maneja los menús, elige el juego, las opciones y la barra morada (Perfil, Juegos, Opciones, Acciones, Ayuda).
+- En la partida, cada jugador maneja su turno con su mando. En el Laberinto todos se mueven a la vez, cada uno con su mando.
+- En cada pantalla aparece abajo (o a la izquierda en la partida) qué botón hace cada cosa.
+- General: flechas o palanca izquierda = moverse · A = elegir · B = volver/cerrar · − = ayuda.
+- + : en el inicio abre Opciones, en la sala inicia la partida, en la partida abre el menú (pausa, rendirse, volver).
+- Yacht: X tira los dados · A guarda un dado o anota en el bloc.
+- 3 en raya: flechas eligen la casilla · A pone la ficha.
+- 4 en línea: izquierda/derecha eligen la columna · A suelta la ficha.
+- Damas: A elige la ficha y después el destino · B suelta la ficha elegida.
+- Reversi: flechas eligen la casilla · A pone la ficha (los puntitos amarillos son jugadas posibles).
+- Mancala: izquierda/derecha eligen la casilla · A siembra.
+- Mente maestra: A pone un color · B borra el último · X prueba o fija el código.
+- Puntos y cajas: flechas eligen la raya · A la traza.
+- Guerra de cartas: A tira tu carta (cada jugador con su mando).
+- Memoria: flechas eligen la ficha · A la da vuelta.
+- Zilch: A guarda/suelta un dado · X tira de nuevo · Y banca.
+- Cierra la caja: A marca fichas · X tira los dados y cierra las fichas.
+- Generala: A guarda un dado o anota · X tira los dados.
+- Dudo: izquierda/derecha cambian cantidad y cara · A apuesta o canta ¡Dudo! · con varios mandos, mantené L para ver tus dados.
+- Blackjack: X pide carta · Y se planta.
+- Culebras y escaleras: A o X tira el dado y mueve la ficha.
+- Mentiroso: A marca cartas · X tira las marcadas · Y ¡Mentiroso! · L muestra tus cartas (varios mandos).
+- Laberinto: flechas o palanca mueven tu ficha (cada jugador con su mando, todos a la vez).
+
+COMPILAR (para el que arma el .nro)
+- Instalar devkitPro con: switch-dev switch-sdl2 switch-sdl2_ttf switch-sdl2_image switch-sdl2_mixer
+- En esta carpeta: make   ->   YachtFriends.nro
+- Para probar en PC (Linux o Windows con MSYS2 y SDL2): make -f Makefile.pc  y correr con YF_ROMFS=romfs/
+
+CRÉDITOS
+- Emojis: Twemoji (c) Twitter/X y colaboradores (jdecked/twemoji), licencia CC-BY 4.0 — romfs/LICENSE-twemoji.txt
+- Fuentes: Kenney Future Narrow (CC0), DejaVu Sans (licencia libre Bitstream Vera/DejaVu).
+- Sonidos: Kenney (CC0). Música: Pixabay (Pixabay Content License). Madera: Pixabay.
+
+PERSONAJES: al abrir, "¿Quién juega?" muestra una tarjeta por mando (8). Cada jugador pulsa el botón de ARRIBA de su mando para entrar, elige nombre y arma su personaje (peinado, cara, accesorio, camisa, pantalón, zapatos…). Se guardan en la SD: sdmc:/switch/YachtFriends/datos.txt. L/R (SL/SR en un Joy-Con solo) abre tu editor. Si hay Joy-Con unidos en pareja, al abrir el juego se abre solo la pantalla del sistema para separarlos (también con el botón "Separar / conectar Joy-Con").
+
+CELULARES COMO MANDOS: en "¿Quién juega?" (o Opciones) > "Unir celulares (QR)". La Switch debe estar en tu WiFi de casa. Muestra un QR y la dirección (http://IP-de-la-Switch:8765/): cada celular lo escanea, pone su nombre y se abre un mando en pantalla completa (sin instalar nada). El mando 1 elige si "Esta pantalla" es Jugador 1 o Mirón. Hasta 8 jugadores entre Joy-Con y celulares; usar en Multijugador. En el celular, los botones muestran la función según el juego cuando es su turno.

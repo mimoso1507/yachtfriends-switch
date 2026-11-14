@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#2e1a0c"><title>Mando</title>
+<style>
+:root{--bg:#2e1a0c;--panel:#4a2e18;--gold:#f2c14e;--cream:#f6e7bf;--btn:#2b2b2e}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;touch-action:none}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--cream);font-family:system-ui,sans-serif;overflow:hidden;overscroll-behavior:none}
+#app{position:fixed;inset:0;display:none;grid-template-rows:auto 1fr;padding:env(safe-area-inset-top) 12px env(safe-area-inset-bottom)}
+header{display:flex;align-items:center;gap:10px;padding:8px 2px}
+#who{font-weight:700;color:var(--gold)}#msg{flex:1;text-align:center;font-size:15px;opacity:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#fs{background:var(--panel);color:var(--cream);border:1px solid #b98a4a;border-radius:10px;padding:6px 10px;font-size:14px}
+#sec{display:none;position:fixed;left:8px;right:8px;top:calc(env(safe-area-inset-top) + 52px);z-index:5;background:#fff8e1;color:#2a1a08;border:3px solid var(--gold);border-radius:16px;padding:10px 14px;text-align:center;font-weight:800;font-size:clamp(20px,5vw,34px);line-height:1.2;white-space:pre-line;max-height:46vh;overflow:auto;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+#dot{width:12px;height:12px;border-radius:50%;background:#e53935}#dot.on{background:#43a047}
+main{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;gap:6px 14px;align-items:center;justify-items:center;min-height:0}
+.sh{grid-column:1/3;display:flex;justify-content:space-between;width:100%;gap:8px}
+.sh .g{display:flex;gap:8px}
+.b{position:relative;background:var(--btn);border:2px solid #d9d9d9;color:#fff;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:22px;box-shadow:0 4px 0 rgba(0,0,0,.45)}
+.b small{font-size:11px;font-weight:600;opacity:.85;max-width:92%;text-align:center;line-height:1.05;margin-top:1px}
+.b.on{background:#f2c14e;color:#222;transform:translateY(3px);box-shadow:none}
+.pill{border-radius:22px;width:clamp(70px,16vw,120px);height:44px;font-size:17px}
+.mid{border-radius:18px;width:62px;height:34px;font-size:22px}
+.dp,.fc{position:relative;width:min(40vw,60vh,280px);aspect-ratio:1}
+.dp .b,.fc .b{position:absolute;width:34%;height:34%}
+.u{left:33%;top:0}.d{left:33%;bottom:0}.l{left:0;top:33%}.r{right:0;top:33%}
+.fc .u{border-color:#fff}
+.dp .b{border-radius:16px}
+#hello{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;background:var(--bg)}
+#hello h1{margin:0;color:var(--gold);font-size:28px}
+#hello input{font-size:22px;padding:12px 14px;border-radius:12px;border:2px solid #b98a4a;background:#fff;color:#222;width:min(80vw,320px);text-align:center;-webkit-user-select:text;user-select:text;touch-action:auto}
+#hello button{font-size:22px;font-weight:800;padding:14px 28px;border-radius:14px;border:0;background:var(--gold);color:#3b2414;touch-action:auto}
+#hello p{margin:0;opacity:.85;max-width:420px}
+#sec.long{font-size:clamp(15px,3.6vw,22px);text-align:left;font-weight:700;line-height:1.35;columns:2;column-gap:18px}
+@media (orientation:landscape){#sec.long{left:auto;width:min(46vw,520px);top:calc(env(safe-area-inset-top) + 52px);max-height:calc(100vh - 70px)}body.hassec main{margin-right:min(46vw,520px)}}
+@media (orientation:portrait){#sec.long{max-height:38vh}body.hassec main{margin-top:38vh}main{grid-template-columns:1fr;grid-template-rows:auto auto auto;align-content:space-evenly}.sh{grid-column:1}.dp,.fc{width:min(70vw,44vh)}}
+</style></head><body>
+<div id="hello"><h1>Unirme al juego</h1><p>Escribe tu nombre. Después se abre el mando en pantalla completa.</p>
+<input id="nm" maxlength="14" placeholder="Tu nombre" autocomplete="off"><button id="go">¡Entrar!</button><p id="err"></p></div>
+<div id="sec"></div>
+<div id="app"><header><div id="dot"></div><div id="who">—</div><div id="msg">Conectando…</div><button id="fs">⛶ Pantalla completa</button></header>
+<main>
+<div class="sh"><div class="g"><div class="b pill" data-b="6">ZL<small></small></div><div class="b pill" data-b="4">L<small></small></div></div>
+<div class="g"><div class="b mid" data-b="9">−</div><div class="b mid" data-b="8">+</div></div>
+<div class="g"><div class="b pill" data-b="5">R<small></small></div><div class="b pill" data-b="7">ZR<small></small></div></div></div>
+<div class="dp"><div class="b u" data-b="10">▲</div><div class="b d" data-b="11">▼</div><div class="b l" data-b="12">◀</div><div class="b r" data-b="13">▶</div></div>
+<div class="fc"><div class="b u" data-b="2">X<small></small></div><div class="b d" data-b="0">A<small></small></div><div class="b l" data-b="3">Y<small></small></div><div class="b r" data-b="1">B<small></small></div></div>
+</main></div>
+<script>
+(function(){
+var ws,mask=0,sent=-1,name=localStorage.getItem('yf-name')||'',app=document.getElementById('app'),hello=document.getElementById('hello');
+var nm=document.getElementById('nm');nm.value=name;
+var NAMES={0:'A',1:'B',2:'X',3:'Y',4:'L',5:'R',6:'ZL',7:'ZR',8:'+',9:'-'};
+function fs(){var e=document.documentElement;try{(e.requestFullscreen||e.webkitRequestFullscreen||function(){}).call(e);}catch(x){}
+ try{screen.orientation&&screen.orientation.unlock&&screen.orientation.unlock();}catch(x){}}
+function wake(){try{navigator.wakeLock&&navigator.wakeLock.request('screen').catch(function(){});}catch(x){}}
+function connect(){
+ ws=new WebSocket('ws://'+location.host+'/');
+ ws.onopen=function(){document.getElementById('dot').className='on';ws.send('h'+name);sent=-1;push();};
+ ws.onclose=function(){document.getElementById('dot').className='';document.getElementById('msg').textContent='Reconectando…';setTimeout(connect,1200);};
+ ws.onmessage=function(e){try{state(JSON.parse(e.data));}catch(x){}};
+}
+function state(s){
+ document.getElementById('who').textContent=(s.slot?'J'+s.slot+' · ':'')+(s.name||name);
+ document.getElementById('msg').textContent=s.msg||'';
+ var sc=document.getElementById('sec');if(s.secret){sc.textContent=s.secret;sc.classList.toggle('long',s.secret.length>60);sc.style.display='block';document.body.classList.add('hassec');}else{sc.style.display='none';document.body.classList.remove('hassec');}
+ var lab={};(s.hints||[]).forEach(function(h){h[0].split('/').forEach(function(k){lab[k]=h[1];});});
+ document.querySelectorAll('[data-b]').forEach(function(el){var k=NAMES[el.dataset.b],sm=el.querySelector('small');if(sm)sm.textContent=lab[k]||'';});
+ var dir=lab['DPAD']||lab['DPAD/STICK']||'';document.body.dataset.turn=s.turn?1:0;
+}
+function push(){if(ws&&ws.readyState===1&&mask!==sent){ws.send('k'+mask);sent=mask;}}
+var touches={};
+function bind(){
+ document.querySelectorAll('[data-b]').forEach(function(el){
+  var b=+el.dataset.b;
+  function down(e){e.preventDefault();mask|=1<<b;el.classList.add('on');if(navigator.vibrate)navigator.vibrate(8);push();}
+  function up(e){e.preventDefault();mask&=~(1<<b);el.classList.remove('on');push();}
+  el.addEventListener('pointerdown',function(e){try{el.setPointerCapture(e.pointerId);}catch(x){}down(e);});
+  el.addEventListener('pointerup',up);el.addEventListener('pointercancel',up);el.addEventListener('lostpointercapture',up);
+  el.addEventListener('contextmenu',function(e){e.preventDefault();});
+ });
+}
+document.getElementById('fs').onclick=fs;
+document.getElementById('go').onclick=function(){
+ name=(nm.value||'').trim();if(!name){document.getElementById('err').textContent='Escribe un nombre';return;}
+ localStorage.setItem('yf-name',name);hello.style.display='none';app.style.display='grid';fs();wake();bind();connect();
+ setInterval(function(){if(ws&&ws.readyState===1)ws.send('p');},5000);
+};
+document.addEventListener('visibilitychange',function(){if(!document.hidden){wake();}});
+})();
+</script></body></html>

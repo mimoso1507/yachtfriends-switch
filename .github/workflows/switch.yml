@@ -1,0 +1,37 @@
+name: Compilar Switch .nro
+on:
+  push:
+    branches: [switch-build]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: devkitpro/devkita64:latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Paquetes SDL2
+        run: dkp-pacman -Syu --noconfirm --needed switch-dev switch-sdl2 switch-sdl2_ttf switch-sdl2_image switch-sdl2_mixer || true
+      - name: make
+        shell: bash
+        run: |
+          set -o pipefail
+          make -j4 2>&1 | tee build.log
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: YachtFriends-nro
+          path: |
+            YachtFriends.nro
+            build.log
+      - name: Publicar .nro en la rama switch-nro
+        if: success()
+        shell: bash
+        run: |
+          mkdir /tmp/out && cp YachtFriends.nro build.log /tmp/out/
+          (aarch64-none-elf-nm -C -n YachtFriends.elf | awk '$2 ~ /^[tTwW]$/' > /tmp/out/symbols.txt) || true
+          cd /tmp/out
+          git init -q -b switch-nro && git config user.name "build-bot" && git config user.email "build-bot@users.noreply.github.com"
+          git add -A && git commit -qm "YachtFriends.nro de ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" switch-nro

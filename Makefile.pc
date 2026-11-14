@@ -1,0 +1,9 @@
+# Compila la versión de PC (Linux/Windows con MSYS2) para probar el port sin la consola.
+CXX ?= g++
+SRC := $(wildcard source/*.cpp source/games/*.cpp)
+CXXFLAGS := -std=c++17 -O2 -Wall -Wno-unused-function $(shell pkg-config --cflags sdl2 SDL2_ttf SDL2_image SDL2_mixer)
+LIBS := $(shell pkg-config --libs sdl2 SDL2_ttf SDL2_image SDL2_mixer)
+yachtfriends-pc: $(SRC) source/*.h
+	$(CXX) $(CXXFLAGS) $(SRC) -o $@ $(LIBS)
+clean:
+	rm -f yachtfriends-pc
